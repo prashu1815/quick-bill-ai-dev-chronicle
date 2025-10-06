@@ -3,7 +3,7 @@ import { Calendar, Save, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const initialLogData = [
-  { id: 1, date: 'Aug 24, 2025', title: 'Day:1-> Introduction & Foundation Setup.', details: 'Kickstarted QuickBill AI! Defined QuickBill AI vision, decided the problem we are solving, chose the name & branding' },
+  { id: 1, date: '6 oct, 2025', title: 'Day:1-> Introduction & Foundation Setup.', details: 'Kickstarted QuickBill AI! Defined QuickBill AI vision, decided the problem we are solving, chose the name & branding' },
 ];
 
 const HomePage = ({ isLoggedIn }) => {
