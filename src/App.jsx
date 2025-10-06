@@ -28,7 +28,7 @@ const App = () => {
           <div className="flex justify-between items-center mb-10">
             <Link to="/" className="flex items-center space-x-4">
               <img
-                src="https://res.cloudinary.com/dyhbpohrb/image/upload/v1756105513/Gemini_Generated_Image_k8aon3k8aon3k8ao_q7a4af.png"
+                src="https://res.cloudinary.com/dyhbpohrb/image/upload/v1759654053/1000333461_yf7wo4.webp"
                 alt="QuickBill AI Logo"
                 className="w-14 h-14 rounded-full shadow-lg border-2 border-indigo-500 object-cover"
               />

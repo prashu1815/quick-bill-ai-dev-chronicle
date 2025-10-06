@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const initialLogData = [
   { id: 1, date: 'Aug 24, 2025', title: 'Day:1-> Introduction & Foundation Setup.', details: 'Kickstarted QuickBill AI! Defined QuickBill AI vision, decided the problem we are solving, chose the name & branding' },
-  { id: 2, date: 'Aug 25, 2025', title: 'Day:2-> Tech Stack Overview', details: 'Choose the tech stack and the core technologies we’ll use to build QuickBill AI.' },
 ];
 
 const HomePage = ({ isLoggedIn }) => {
