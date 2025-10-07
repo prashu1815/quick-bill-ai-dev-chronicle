@@ -2,10 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Calendar, ArrowLeft } from "lucide-react";
 
+// Phase 2: Planning & Architecture (Feature-first, MVP-focused)
+// This file intentionally avoids naming specific tech stacks.
+// Focus: product goals, user journeys, detailed MVP feature specs, data model drafts,
+// API contract examples (generic), security, testing, rollout, and next steps.
+
 const Day2Page = () => {
   return (
     <div className="max-w-4xl mx-auto my-12 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-3xl shadow-2xl p-10 sm:p-12 lg:p-16 transition-all duration-500 ease-in-out">
-      
       {/* Back button */}
       <Link
         to="/"
@@ -23,125 +27,116 @@ const Day2Page = () => {
 
       {/* Post title */}
       <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight tracking-tight mb-12">
-        Day 2: Building QuickBill AI - Tech Stack Overview
+        Phase 2: Planning & Architecture – QuickBill AI
       </h1>
 
-      {/* Introduction */}
+      {/* Intro */}
       <p className="text-gray-700 mb-8 leading-relaxed">
-        Hi mawa 👋, welcome to Day 2! Today we focused on selecting and understanding our tech stack. Using the right stack is crucial for smooth development, scalability, and maintainability.
+        Hey mawa 👋 — Phase 2 is now a hardcore planning sesh. We intentionally keep
+        tech names out of this doc and focus on **what the product must do first**
+        (MVP) and **how** it will behave in the wild. The goal: ship a tiny, useful
+        product, learn fast, then expand.
       </p>
 
-      {/* Frontend Section */}
+      {/* Product Vision & Goals */}
       <section className="mb-12">
-  <h2 className="text-3xl font-bold text-gray-900 mb-6">Frontend: React + Next.js + Tailwind CSS + shadcn/ui</h2>
-  <p className="text-gray-700 mb-4 leading-relaxed">
-    We are using <span className="font-semibold text-indigo-700">React</span> for building reusable components, 
-    <span className="font-semibold text-indigo-700">Next.js</span> for server-side rendering and routing, 
-    <span className="font-semibold text-indigo-700">Tailwind CSS</span> for utility-first styling, and 
-    <span className="font-semibold text-indigo-700">shadcn/ui</span> for pre-built, accessible, modern UI components that speed up design without compromising flexibility.
-  </p>
-  <div className="flex flex-col sm:flex-row sm:gap-4 gap-2 mb-4">
-    <a href="https://react.dev/" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">React Docs</a>
-    <a href="https://nextjs.org/docs" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">Next.js Docs</a>
-    <a href="https://tailwindcss.com/docs" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">Tailwind CSS Docs</a>
-    <a href="https://ui.shadcn.com/docs" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">shadcn/ui Docs</a>
-  </div>
-  <div className="flex flex-col sm:flex-row sm:gap-4 gap-2">
-    <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d" target="_blank" className="text-red-600 hover:text-red-800 flex items-center gap-1">
-      🎥 React Tutorials - The Net Ninja
-    </a>
-    <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gXdVXVJBmHpSI7zCEcjLUX" target="_blank" className="text-red-600 hover:text-red-800 flex items-center gap-1">
-      🎥 Next.js Tutorials - The Net Ninja
-    </a>
-    <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d" target="_blank" className="text-red-600 hover:text-red-800 flex items-center gap-1">
-      🎥 Tailwind CSS Tutorials - The Net Ninja
-    </a>
-    <a href="https://www.youtube.com/@shadcnui" target="_blank" className="text-red-600 hover:text-red-800 flex items-center gap-1">
-      🎥 shadcn/ui Tutorials - shadcn Official
-    </a>
-  </div>
-</section>
-
-
-      {/* Backend Section */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Backend: Node.js + Express</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Product Vision & Goals</h2>
         <p className="text-gray-700 mb-4 leading-relaxed">
-          For the backend, we use <span className="font-semibold text-indigo-700">Node.js</span>, a fast, scalable JavaScript runtime, together with <span className="font-semibold text-indigo-700">Express.js</span> for building APIs. This setup handles frontend requests efficiently and supports integrating AI features seamlessly.
+          Vision: Enable freelancers and small businesses to convert paper or photo bills
+          into usable, searchable, and auditable data — with minimum friction.
         </p>
-        <div className="flex flex-col sm:flex-row sm:gap-4 gap-2 mb-4">
-          <a href="https://nodejs.org/en/docs/" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">Node.js Official Docs</a>
-          <a href="https://expressjs.com/en/starter/installing.html" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">Express.js Official Docs</a>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:gap-4 gap-2">
-          <a href="https://www.youtube.com/watch?v=fBNz5xF-Kx4" target="_blank" className="text-red-600 hover:text-red-800 flex items-center gap-1">
-            🎥 Node.js Crash Course - Traversy Media
-          </a>
-          <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9g7k0UctwzP1H1V9rMwnOyc" target="_blank" className="text-red-600 hover:text-red-800 flex items-center gap-1">
-            🎥 Express.js Tutorials - The Net Ninja
-          </a>
-        </div>
-      </section>
-
-      {/* Database Section */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Database: Neon PostgreSQL</h2>
-        <p className="text-gray-700 mb-4 leading-relaxed">
-          We store all user data, scanned bills, and AI-extracted info in <span className="font-semibold text-indigo-700">PostgreSQL</span> using <span className="font-semibold text-indigo-700">Neon</span>. PostgreSQL supports relational data, complex queries, and is reliable for transactional workloads. Neon makes deployment, scaling, and backups seamless in the cloud.
-        </p>
-        <div className="flex flex-col sm:flex-row sm:gap-4 gap-2 mb-4">
-          <a href="https://www.postgresql.org/docs/" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">PostgreSQL Official Docs</a>
-          <a href="https://neon.tech/docs" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">Neon Docs</a>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:gap-4 gap-2">
-          <a href="https://www.youtube.com/watch?v=qw--VYLpxG4" target="_blank" className="text-red-600 hover:text-red-800 flex items-center gap-1">
-            🎥 PostgreSQL Tutorials - Programming with Mosh
-          </a>
-        </div>
-      </section>
-
-      {/* Authentication Section */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Authentication: Clerk</h2>
-        <p className="text-gray-700 mb-4 leading-relaxed">
-          We are using <span className="font-semibold text-indigo-700">Clerk</span> for authentication. It handles signup, login, password resets, and session management securely, saving us from writing custom auth logic.
-        </p>
-        <div className="flex flex-col sm:flex-row sm:gap-4 gap-2 mb-4">
-          <a href="https://clerk.com/docs" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">Clerk Official Docs</a>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:gap-4 gap-2">
-          <a href="https://www.youtube.com/@clerkdocs" target="_blank" className="text-red-600 hover:text-red-800 flex items-center gap-1">
-            🎥 Clerk Tutorials - Clerk Official Channel
-          </a>
-        </div>
-      </section>
-
-      {/* AI Integration Section */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">AI Integration: OpenAI API</h2>
-        <p className="text-gray-700 mb-4 leading-relaxed">
-          For AI-powered bill extraction, we are using <span className="font-semibold text-indigo-700">OpenAI API</span>. It helps detect dates, totals, items, taxes, and provides intelligent insights for QuickBill AI.
-        </p>
-        <div className="flex flex-col sm:flex-row sm:gap-4 gap-2 mb-4">
-          <a href="https://platform.openai.com/docs" target="_blank" className="text-indigo-600 underline hover:text-indigo-800">OpenAI API Docs</a>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:gap-4 gap-2">
-          <a href="https://www.youtube.com/@TheAIEpiphany" target="_blank" className="text-red-600 hover:text-red-800 flex items-center gap-1">
-            🎥 OpenAI Tutorials - The AI Epiphany
-          </a>
-        </div>
-      </section>
-
-      {/* Reflections */}
-      <section className="mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Reflections</h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>Our tech stack is fully set up and connected.</li>
-          <li>Frontend and backend environments are ready for development.</li>
-          <li>Database, authentication, and AI integration are configured securely.</li>
-          <li>This setup provides a solid base for building core AI features in Phase 3.</li>
+        <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
+          <li>Primary goal: accurate, fast extraction of key bill fields (vendor, date, total).</li>
+          <li>Secondary goal: make data review & correction trivial for users.</li>
+          <li>Business goal: reach initial paying customers within 3 months of launch.</li>
         </ul>
+       
       </section>
+
+
+      {/* User Journeys */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">User Journeys (detailed)</h2>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">Upload & Extraction</h3>
+        <ol className="list-decimal list-inside text-gray-700 space-y-2 mb-4">
+          <li>User signs up and lands on dashboard.</li>
+          <li>Clicks "Upload bill" &amp; selects image/PDF.</li>
+          <li>File is uploaded to secure object storage (raw file stored).
+            System enqueues extraction job.</li>
+          <li>AI extraction service returns results (vendor, date, total, items).
+            System stores extraction and links to raw upload.</li>
+          <li>User sees a preview with highlighted fields and can accept / edit fields.
+            Edited values update the extraction record and create an audit entry.</li>
+        </ol>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">Review & Correct</h3>
+        <p className="text-gray-700 mb-4 leading-relaxed">
+          Key requirement: make corrections painless. Each editable field should have inline edit
+          + a quick keyboard flow (tab to next). Maintain an audit trail for each edit.
+        </p>
+
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">Search & Retrieve</h3>
+        <p className="text-gray-700 leading-relaxed">
+          Users must find bills by vendor, date range, amount, or free-text. Provide fast filtering
+          and a paginated results list. Support sorting by date and amount.
+        </p>
+      </section>
+
+      {/* MVP Feature Specs (detailed) */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">MVP Feature Specs (in-depth)</h2>
+
+        <h3 className="text-2xl font-semibold text-indigo-700 mb-3">1 — Upload Flow</h3>
+        <p className="text-gray-700 mb-2 leading-relaxed">
+          User story: "As a user, I want to upload a bill photo or PDF and quickly get extracted data"
+          so I can stop typing.
+        </p>
+        <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
+          <li>UI: drag & drop, file picker, mobile camera upload.
+            Show progress percentage and optimistic UI states.</li>
+          <li>Acceptance criteria: upload success &amp; queue confirmation shown within 2s.</li>
+          <li>Error handling: show clear messages if file type/size unsupported.
+            Allow retry and keep original file reference.</li>
+        </ul>
+
+        <h3 className="text-2xl font-semibold text-indigo-700 mb-3">2 — Extraction Result Display & Edit</h3>
+        <p className="text-gray-700 mb-2 leading-relaxed">
+          User story: "As a user, I want to correct extracted fields so the data is accurate."
+        </p>
+        <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
+          <li>Display extracted fields with confidence scores (if available).</li>
+          <li>Inline edit with quick save and clear undo option.</li>
+          <li>Acceptance criteria: editable flow finishes &amp; persists within 3s; audit log entry created.</li>
+        </ul>
+
+        <h3 className="text-2xl font-semibold text-indigo-700 mb-3">3 — Dashboard (basic)</h3>
+        <p className="text-gray-700 mb-2 leading-relaxed">
+          Minimal dashboard: recent uploads, quick stats (total bills, total amount captured),
+          and a search box. No heavy charts in MVP — keep it focused.
+        </p>
+
+        
+
+      </section>
+
+
+      
+
+     {/* Developer Notes & Next Steps */}
+<section className="mb-8">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6">Developer Notes & Next Steps</h2>
+  <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
+    <li>All planning and architecture discussions are wrapped up — we now have a solid blueprint for QuickBill AI’s MVP and post-launch roadmap.</li>
+    <li>Next, we move to identifying and finalizing the <span className="font-semibold text-indigo-700">best tech stack</span> that perfectly fits our goals — balancing performance, scalability, and simplicity.</li>
+    <li>We’ll evaluate options for frontend, backend, database, and AI integration based on developer efficiency, cost, and future growth potential.</li>
+    <li>This next phase sets the foundation for hands-on development — ensuring we build smart, not just fast.</li>
+  </ul>
+
+  <p className="text-gray-700 leading-relaxed">
+    Let’s gear up for <span className="font-semibold text-indigo-700">Phase 3: Choosing the Perfect Tech Stack</span> — where we’ll deep-dive into the tools that make QuickBill AI come alive. 🔥
+  </p>
+</section>
     </div>
   );
 };
