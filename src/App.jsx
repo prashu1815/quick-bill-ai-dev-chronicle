@@ -6,6 +6,7 @@ import { User } from 'lucide-react';
 import HomePage from './pages/HomePage.jsx';
 import Day1Page from './pages/Day1.jsx';
 import Day2Page from './pages/Day2.jsx';
+import Day3Page from './pages/Day3.jsx';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -56,6 +57,7 @@ const App = () => {
             <Route path="/" element={<HomePage isLoggedIn={isLoggedIn} />} />
             <Route path="/day1" element={<Day1Page />} />
             <Route path="/day2" element={<Day2Page />} />
+            <Route path="/day3" element={<Day3Page/>}/>
           </Routes>
 
           {/* Footer */}
