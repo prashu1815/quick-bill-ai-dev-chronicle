@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom';
 const initialLogData = [
   { id: 1, date: '6 oct, 2025', title: 'Day:1-> Phase-1 Idea and validation.', details: 'Kickstarted QuickBill AI! Defined QuickBill AI vision, decided the problem we are solving, chose the name & branding' },
   { id: 2, date: '7 Oct, 2025', title: 'Day:2-> Phase-2 Planning and Architecture',details: 'Mapped out QuickBill AI’s structure — finalized core features (MVP), planned post-launch upgrades, and designed a scalable architecture to keep development clean and future-proof.'},
- {
-  id: 3,date: '8 Oct, 2025',title: 'Day:3 → Phase-3 Tech Stack Overview',details: 'Selected the complete tech stack for QuickBill AI — using Next.js + Tailwind + shadcn/ui for frontend, Node.js + Express for backend, Neon PostgreSQL for database, Clerk for authentication, and Gemini AI for bill extraction. This stack ensures scalability, speed, and clean integration for upcoming AI-powered features.'
-},
+ {id: 3,date: '8 Oct, 2025',title: 'Day:3 → Phase-3 Tech Stack Overview',details: 'Selected the complete tech stack for QuickBill AI — using Next.js + Tailwind + shadcn/ui for frontend, Node.js + Express for backend, Neon PostgreSQL for database, Clerk for authentication, and Gemini AI for bill extraction. This stack ensures scalability, speed, and clean integration for upcoming AI-powered features.'},
+ {id: 4,date: '11 Oct, 2025',title: 'Day:4 → Setting Up Next.js & Authentication 🔐',details: 'Set up the Next.js environment for QuickBill AI and integrated Clerk for authentication. Within a minute, login and signup flows came alive — our AI tool officially learned to identify its users. This marks the beginning of secure, personalized access for every future QuickBill user.'},
 ];
 
 const HomePage = ({ isLoggedIn }) => {
