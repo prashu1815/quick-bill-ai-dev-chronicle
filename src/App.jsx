@@ -8,6 +8,7 @@ import Day1Page from './pages/Day1.jsx';
 import Day2Page from './pages/Day2.jsx';
 import Day3Page from './pages/Day3.jsx';
 import Day4Page from './pages/Day4.jsx';
+import Day5Page from './pages/Day5.jsx';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -60,6 +61,7 @@ const App = () => {
             <Route path="/day2" element={<Day2Page />} />
             <Route path="/day3" element={<Day3Page/>}/>
             <Route path="/day4" element={<Day4Page/>}/>
+            <Route path="/day5" element={<Day5Page/>}/>
           </Routes>
 
           {/* Footer */}
